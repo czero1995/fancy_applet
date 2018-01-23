@@ -1,0 +1,41 @@
+/* pages/cart/cart.wxss */
+.cartContainer{
+  margin-bottom: 80rpx;
+}
+.cartItem{
+  border-bottom: 1px solid #ccc;
+  padding: 0 20rpx;
+}
+.radio{
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
+.operaImg{
+  width: 40rpx;
+  height: 40rpx;
+}
+.operaInput{
+  width: 60rpx;
+  text-align: center;
+  margin: 20rpx 0;
+}
+.radioAll{
+  margin: 0 20rpx;
+}
+.productImg{
+  width: 300rpx;
+  height: 300rpx;
+
+}
+.cartBottom{
+  position: fixed;
+  bottom: 0;
+  height: 80rpx;
+  /* line-height: 120rpx; */
+  width: 100%;
+}
+.submitOrder{
+  width: 200rpx;
+  padding-right: 20rpx;
+}

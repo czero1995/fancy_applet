@@ -1,0 +1,21 @@
+<!--pages/detail/detail.wxml-->
+<view>
+  <image src="{{goodsList.GoodsImage}}"></image>
+  <view class='flex-spacebetween detail-price'>
+   <text>{{goodsList.GoodsName}}</text>
+  <text class='price'>¥ {{goodsList.GoodsPrice}}</text>
+  </view>
+
+</view>
+<view class='fixBottom themeBackground flex-around'>
+  <navigator url="/pages/cart/cart" open-type="switchTab">
+    <image class=" addCartImg " src="../../images/icon/cart_white.png "></image>
+  </navigator>
+  <view bindtap="onAddCart">
+    <text>加入购物车</text>
+  </view>
+  <view bindtap="onPay">
+    <text>立即购买</text>
+
+  </view>
+</view>

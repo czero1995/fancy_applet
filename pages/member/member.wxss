@@ -1,0 +1,36 @@
+/* pages/member/member.wxss */
+.floor_one{
+  height: 400rpx;
+  padding-top: 100rpx;
+}
+.userinfo-avatar{
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 100px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  
+}
+.userinfo-nickname{
+  text-align: center;
+  display: block;
+  margin-top: 40rpx;
+}
+.memberItem{
+  width: 100%;
+}
+.arrowImg{
+  width:40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
+.memberItem{
+  padding:  20rpx;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc;
+  
+}
+.memberItem text{
+  font-size: 26rpx;
+}

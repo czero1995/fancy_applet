@@ -1,0 +1,24 @@
+<!--pages/category/category.wxml-->
+<view class="flex">
+  <view class="left">
+    <view wx:for="{{tabBar}}" wx:key="tabBar">
+      <text class="barName {{currentBar === index?'themeBackground':'' }}" bindtap="onBar" data-bar="{{index}}">{{item.cat_name}}</text>
+    </view>
+  </view>
+  <view class="right">
+    <view class="flex categoryItem" wx:for="{{categortyList.cart}}" wx:key="categortyContent" bindtap="onDetail" data-goods="{{item}}">
+    <image class="productImg" src="{{item.GoodsImage}}"></image>
+    <view class='productDetail'>
+          <text class='productName'>
+          {{item.GoodsName}}
+      </text>
+      <view class='flex-spacebetween'>
+            <text class="price">¥ {{item.GoodsPrice}}</text>
+      <image class="addCartImg" src="../../images/icon/shop_addCart.png" catchtap="onAddCart"               data-carts="{{item}}"></image>
+      </view>
+
+    </view>
+
+    </view>
+  </view>
+</view>

@@ -1,0 +1,29 @@
+/**index.wxss**/
+swiper{
+  width:100%;
+}
+.slide-image{
+  width: 100%;
+  height: 100%;
+}
+.productBox{
+  flex-wrap: wrap;
+}
+.productImg{
+  width: 100%;
+  height: 400rpx;
+}
+.productItem{
+  width: 50%;
+  padding: 0 20rpx;
+  font-size: 28rpx;
+  box-sizing: border-box;
+  padding-bottom: 20rpx;
+  border-bottom: 1px solid #ccc;
+}
+.productItem:nth-of-type(odd){
+  border-right: 1px solid #ccc;
+}
+.productName{
+  text-align: left;
+}

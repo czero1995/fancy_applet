@@ -1,0 +1,42 @@
+/* pages/category/category.wxss */
+.left{
+  border-right: 1px solid #ccc;
+  height: 100%;
+   position: fixed;
+   left: 0;
+   top: 0; 
+   text-align: center;
+   width: 240rpx;
+}
+.right{
+  flex:1;
+  margin-left: 240rpx;
+  /* padding-left: 20rpx; */
+}
+
+.barName{
+  text-align: center;
+  font-size: 28rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  display: block;
+  border-bottom: 1px solid #ccc;
+}
+.categoryItem{
+  border-bottom: 1px solid #ccc;
+  align-items: flex-start;
+}
+.productName{
+  margin-bottom: 20rpx;
+  margin-top: 40rpx;
+  display: block;
+}
+.productImg{
+  width: 300rpx;
+  height: 260rpx;
+}
+.productDetail{
+  font-size: 26rpx;
+  width: 100%;
+  padding-right: 40rpx;
+}

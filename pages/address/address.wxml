@@ -1,0 +1,9 @@
+<!--pages/address/address.wxml-->
+<view class='addressItem' wx:for="{{addressList}}">
+  <text>{{item}}</text>
+</view>
+<navigator url="/pages/addaddress/addaddress">
+<view class='fixBottom themeBackground'>
+  <view>新增地址</view>
+</view>
+</navigator>

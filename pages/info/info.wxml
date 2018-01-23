@@ -1,0 +1,15 @@
+<!--pages/info/info.wxml-->
+<image src='../../images/github.png'></image>
+<view>
+  <text>手机型号:{{model}}</text>
+</view>
+
+<view>
+  <text>系统语言:{{language}}</text>
+</view>
+<view>
+  <text>系统版本:{{version}}</text>
+</view>
+<view>
+  <text>系统平台:{{platform}}</text>
+</view>

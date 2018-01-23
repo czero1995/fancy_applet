@@ -1,0 +1,46 @@
+/**app.wxss**/
+.themeColor{
+  color:#6495ED;
+}
+.themeBackground{
+  background:#6495ED;
+  color:white;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.price{
+  color:red;
+} 
+.flex{
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.flex-around{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.flex-spacebetween{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fixBottom{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+.addCartImg{
+  width: 40rpx;
+  height: 40rpx;
+}

@@ -1,0 +1,12 @@
+<!--pages/addaddress/addaddress.wxml-->
+<view class="section">
+  <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+    <view class="picker">
+      当前选择：{{region[0]}}，{{region[1]}}，{{region[2]}}
+    </view>
+  </picker>
+</view>
+<view class='fixBottom themeBackground' bindtap='onSave'>
+  <view>保存</view>
+</view>
+

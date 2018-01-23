@@ -1,0 +1,38 @@
+<!--pages/cart/cart.wxml-->
+<view class='cart'>
+  <view class='cartContainer'>
+    <view class="flex cartItem" wx:for="{{cartList}}" wx:key="cartList" bindtap="onDetail" data-goods="{{item}}">
+      <view catchtap='onSelect' data-index="{{index}}">
+        <image wx:if="{{!item.selected}}" class="radio" src="../../images/icon/radio.png"></image>
+        <image wx:else class="radio" src="../../images/icon/radio_select.png"></image>
+      </view>
+
+      <view class="flex">
+        <image class="productImg" src="{{item.GoodsImage}}">
+        </image>
+        <view>
+          <text>{{item.GoodsName}}</text>
+          <view class='flex'>
+            <image class="operaImg" src="../../images/icon/shop_cut.png" catchtap='onOperaCut' data-index="{{index}}"></image>
+            <input class='operaInput' value="{{item.GoodsNum}}" disabled="true"></input>
+            <image class="operaImg" src="../../images/icon/shop_add.png" catchtap='onOperaAdd' data-index="{{index}}"></image>
+
+          </view>
+          <text class='price'>¥ {{item.GoodsPrice}}</text>
+        </view>
+      </view>
+
+    </view>
+  </view>
+  <view class='cartBottom themeBackground flex-spacebetween'>
+    <view class='flex'>
+      <view bindtap='onSelectAll'>
+        <image wx:if="{{!allSelected}}" class="radio radioAll" src="../../images/icon/radio.png"></image>
+        <image wx:else class="radio radioAll" src="../../images/icon/radio_select.png"></image>
+      </view>
+      <text>合计:¥ {{allCoach}} </text>
+    </view>
+    <text class='submitOrder' bindtap='onPay'>提交订单</text>
+  </view>
+
+</view>

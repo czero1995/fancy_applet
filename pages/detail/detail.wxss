@@ -1,0 +1,9 @@
+/* pages/detail/detail.wxss */
+image{
+  display: block;
+}
+.detail-price{
+  width: 100%;
+  padding: 0 40rpx;
+  box-sizing: border-box;
+}

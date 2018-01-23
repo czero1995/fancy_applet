@@ -1,0 +1,25 @@
+<!--pages/member/member.wxml-->
+<view>
+  <view class="floor_one themeBackground">
+    <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <navigator url="/pages/info/info">
+    <view class="memberItem flex-spacebetween">
+      <text>个人信息</text>
+      <image class="arrowImg" src="../../images/icon/arrowRight.png"></image>
+    </view>
+  </navigator>
+  <navigator url="/pages/pay/pay">
+  <view class="memberItem flex-spacebetween">
+    <text>我的订单</text>
+    <image class="arrowImg" src="../../images/icon/arrowRight.png"></image>
+  </view>
+  </navigator>
+  <navigator url="/pages/address/address">
+    <view class="memberItem flex-spacebetween">
+      <text>我的地址</text>
+      <image class="arrowImg" src="../../images/icon/arrowRight.png"></image>
+    </view>
+    </navigator>
+</view>

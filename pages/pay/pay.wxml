@@ -1,0 +1,3 @@
+<!--pages/pay/pay.wxml-->
+<image src='../../images/github.png'></image>
+<text>这是订单购买页面</text>

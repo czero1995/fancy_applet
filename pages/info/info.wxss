@@ -1,0 +1,12 @@
+/* pages/info/info.wxss */
+image{
+  width: 400rpx;
+  height: 400rpx;
+  display: block;
+  margin: 0 auto; 
+}
+text{
+  margin-top: 40rpx;
+  display: block;
+  text-align: center;
+}
