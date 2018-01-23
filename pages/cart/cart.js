@@ -78,7 +78,8 @@ Page({
 
     this.setData({
       cartList: cartlist,
-    })
+    });
+    this.onCalAllCoach();
   },
   // 计算商品价格
   onCalAllCoach(){
